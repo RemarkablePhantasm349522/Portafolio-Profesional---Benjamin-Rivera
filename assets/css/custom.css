@@ -1,0 +1,47 @@
+:root{
+  --brand: #0d6efd;
+  --muted: #6c757d;
+  --accent: #6610f2;
+  --font-sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html,body{
+  height:100%;
+  font-family: var(--font-sans);
+  color: #212529;
+  background-color: #f8f9fa;
+}
+
+.navbar-brand{ color: var(--brand); }
+.navbar .nav-link.active{ color: var(--brand); font-weight:600; }
+
+.card { border: 0; border-radius: .6rem; overflow: hidden; }
+
+.card-img-top {
+  width: 100%;
+  height: 200px;        
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+@media (max-width: 576px) {
+  .card-img-top { height: 160px; }
+}
+
+footer { border-top: 1px solid rgba(0,0,0,0.04); }
+
+header img{ max-height: 300px; object-fit: cover; }
+
+.timeline .row > div { position: relative; }
+
+.badge { font-size: .75rem; }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a:focus, button:focus, .btn:focus { outline: 3px solid rgba(13,110,253,0.25); outline-offset: 2px; }
+
+.modal-body img { width:100%; height:auto; border-radius: .25rem; }

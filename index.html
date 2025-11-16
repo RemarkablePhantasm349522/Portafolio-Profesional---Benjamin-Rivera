@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Benjamin Rivera (Remarkbl) - Portafolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Benjamin Rivera</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portafolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-light py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1 class="display-5 fw-bold">Hola, soy Benjamin Franklin Rivera Leiva</h1>
+          <p class="lead text-muted">Desarrollador web | Frontend | UI/UX </p>
+          <a href="portfolio.html" class="btn btn-primary me-2">Aqui algunos de mis proyectos</a>
+          <a href="contact.html" class="btn btn-outline-secondary">Contáctame</a>
+        </div>
+        <div class="col-md-6 d-none d-md-block text-end">
+          <img src="assets/img/n1.png" class="img-fluid rounded shadow-sm" alt="Imagen representativa">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="h3 mb-4">Servicios</h2>
+      <div class="row g-4">
+        <div class="col-sm-6 col-md-4">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Desarrollo Frontend</h5>
+              <p class="card-text text-muted">Construcción de interfaces responsivas con HTML, CSS, Bootstrap y muchas otras tecnologias.</p>
+              <div class="mt-auto">
+                <span class="badge bg-primary">Frontend</span>
+                <span class="badge bg-secondary">Responsive</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Optimización de UI</h5>
+              <p class="card-text text-muted">Mejoras de consistencia visual e implementacion en diseños responsivos.</p>
+              <div class="mt-auto">
+                <span class="badge bg-success">Usabilidad</span>
+                <span class="badge bg-secondary">Accesibilidad</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Implementacion en trabajos colaborativos</h5>
+              <p class="card-text text-muted">Capacidad para editar e implementar puntos especificos en trabajos grupales.</p>
+              <div class="mt-auto">
+                <span class="badge bg-info text-dark">Support</span>
+                <span class="badge bg-secondary">Colaboracion</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-white">
+    <div class="container">
+      <h2 class="h3 mb-4">Proyectos destacados</h2>
+      <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded shadow-sm">
+          <div class="carousel-item active">
+            <img src="assets/img/pp1.png" class="d-block w-100" alt="Proyecto 1">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+              <h5 class="mb-0">Proyecto 1</h5>
+              <small>Diseño de Pagina Principal para UNIVO (Figma)</small>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/pp2.png" class="d-block w-100" alt="Proyecto 2">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+              <h5 class="mb-0">Proyecto 2</h5>
+              <small>Diseño para tienda de perfumeria en linea (HTML, CSS)</small>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4 bg-light mt-5">
+    <div class="container d-flex justify-content-between align-items-center">
+      <small class="text-muted">© <span id="year"></span> Benjamin Rivera</small>
+      <div>
+        <a href="#" class="text-muted me-3"><i class="bi bi-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
